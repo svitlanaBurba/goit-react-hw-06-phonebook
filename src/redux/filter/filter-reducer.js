@@ -1,15 +1,10 @@
 import {createReducer} from '@reduxjs/toolkit';
 import {handleChange} from './filter-actions';
 
-const initialState = {filter: ''};
-const filterReducer = createReducer(initialState, {
-  [handleChange]: (state, action) => {
-    // console.log('filerReducer-');
-    // console.dir(state);
-    // console.dir(action);
-    // console.dir({...state, filter: action.payload});
-    // console.log('-filerReducer');
-    return {...state, filter: action.payload};
+const initialState = '';
+const filter = createReducer(initialState, {
+  [handleChange]: (state, {payload}) => {
+    return payload;
   }
 });
 
@@ -32,4 +27,4 @@ const filterReducer = createReducer(initialState, {
 //   }
 // };
 
-export default filterReducer;
+export default filter;

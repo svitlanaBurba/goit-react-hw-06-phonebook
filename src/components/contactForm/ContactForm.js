@@ -71,7 +71,7 @@ ContactForm.propTypes = {
 const mapStateToProps = state => {
   // console.log('Contacts form - mapstate');
   // console.dir(state);
-  return {contacts: state.contacts.contacts};
+  return {contacts: state.contacts};
 };
 
 // Решение до Redux Toolkit, оставила для сравнения

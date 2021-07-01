@@ -26,7 +26,7 @@ const Filter = ({filter, handleChange}) => {
 
 Filter.propTypes = {
   handleChange: PropTypes.func.isRequired,
-  filter: PropTypes.object.isRequired
+  filter: PropTypes.string.isRequired
 };
 
 const mapStateToProps = state => {

@@ -40,9 +40,9 @@ const getFilteredContacts = (allContacts, filter) => {
 };
 const mapStateToProps = state => {
   // console.log('ContactList-mapStateToProps');
-  // console.dir(state);
+  // console.dir(state.contacts);
   return {
-    contacts: getFilteredContacts(state.contacts.contacts, state.filter.filter)
+    contacts: getFilteredContacts(state.contacts, state.filter)
   };
 };
 
